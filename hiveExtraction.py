@@ -16,7 +16,7 @@ kape_command = [
     kape_path,
     '--tsource', 'C:',
     '--tdest', output_dir,
-    '--sa', 
+    '--target', 'RegistryHives', 
     '--vhdx',  
     '--flush',  
     '--debug'  
@@ -33,6 +33,7 @@ for root, dirs, files in os.walk(output_dir):
             recmd_command = [
                 recmd_path,
                 '-f', hive_path,
+                '--bn', 'RECmd/BatchExamples/DFIRBatch.reb',
                 '--csv', os.path.join(output_dir, f"{file}_parsed.csv")
             ]
             print(f"Parsing {hive_path} with RECmd...")
