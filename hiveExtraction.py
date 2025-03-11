@@ -4,7 +4,7 @@ import time
 
 
 kape_path = r"KAPE/kape.exe"  
-output_dir = r"K:\Regfile output"  
+output_dir = r"outputDirectory"  
 recmd_path = r"RECmd/RECmd.exe"  
 
 # Ensure output directory exists
